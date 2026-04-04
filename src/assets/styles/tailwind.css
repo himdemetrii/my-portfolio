@@ -90,3 +90,30 @@
 .dd *:first-child {
   margin-top: 0;
 }
+:root {
+  --aw-color-bg-page: #141414;
+}
+
+.dark {
+  --aw-color-bg-page: #141414;
+}
+
+body {
+  background: radial-gradient(ellipse at top left, #2a2a2a 0%, #141414 40%, #0a0a0a 100%) !important;
+  min-height: 100vh;
+}
+
+section, .bg-blue-50 {
+  background: transparent !important;
+}
+header, footer {
+  background: transparent !important;
+}
+
+#header.scroll > div:first-child {
+  background: rgba(20, 20, 20, 0.95) !important;
+}
+footer, .dark footer {
+  background: transparent !important;
+  background-color: transparent !important;
+}

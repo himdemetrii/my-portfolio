@@ -1,79 +1,79 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact — Demetri Williams',
+  description: 'Get in touch with Demetri Williams for collaborations, internships, project inquiries, or anyything else!',
+  ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <section class="py-20">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h1 class="text-4xl font-bold mb-4 dark:text-white">Let's Connect</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-10">
+        Whether you're interested in collaborating, discussing a project, or discussing a job opportunity,
+        I’d love to hear from you. Reach out using the form below or connect with me on social media!
+      </p>
 
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
+      <!-- Contact Form -->
+      <form
+        action="https://formsubmit.co/williamsjrdemetri@gmail.com"
+        method="POST"
+        class="grid gap-6 text-left"
+      >
+        <input type="hidden" name="_captcha" value="false" />
 
-  <!-- Features2 Widget ************** -->
+        <div>
+          <label class="block mb-2 font-medium">Name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full p-3 rounded border dark:bg-gray-800 dark:border-gray-700"
+          />
+        </div>
 
-  <Features2
-    title="We are here to help!"
-    items={[
-      {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Email',
-        description: 'contact@support.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
-      },
-    ]}
-  />
+        <div>
+          <label class="block mb-2 font-medium">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full p-3 rounded border dark:bg-gray-800 dark:border-gray-700"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-2 font-medium">Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            class="w-full p-3 rounded border dark:bg-gray-800 dark:border-gray-700"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-blue-600 text-white py-3 px-6 rounded font-semibold hover:bg-blue-700 transition"
+        >
+          Send Message
+        </button>
+      </form>
+
+      <!-- Social Links -->
+      <div class="mt-12">
+        <h2 class="text-xl font-semibold mb-4 dark:text-white">Or reach me here:</h2>
+        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+          <li><strong>Email:</strong> williamsjrdemetri@gmail.com | dwil434@lsu.edu</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/demetri-williams-0370aa304/" target="_blank" class="text-blue-600 dark:text-blue-400">linkedin.com/in/demetri-williams</a></li>
+          <li><strong>TikTok:</strong> <a href="https://tiktok.com/himdemetrii" target="_blank" class="text-blue-600 dark:text-blue-400">tiktok.com/himdemetrii</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
 </Layout>

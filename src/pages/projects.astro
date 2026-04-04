@@ -1,0 +1,57 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Projects — Demetri Williams',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="px-6 py-12 max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-2">Projects</h1>
+    <p class="text-muted mb-10">A collection of what I've built so far, with MORE in progress.</p>
+
+    <div class="mb-12 border-l-4 border-blue-500 pl-6">
+      <h2 class="text-2xl font-semibold mb-1">Texas Hold 'Em Poker Bot</h2>
+      <p class="text-blue-400 font-medium mb-4">Reinforcement Learning · PyTorch · Python · OpenSpiel</p>
+      <p class="text-muted mb-4">Developed a reinforcement learning Texas Hold 'Em bot using PyTorch and Google DeepMind's OpenSpiel framework to optimize strategy in limited-information environments.</p>
+      <ul class="text-muted space-y-2 list-disc list-inside">
+        <li>Implemented neural network components including dense input layers, multi-action output heads, and SoftMax activation functions.</li>
+        <li>Improved model accuracy from 0% to 64% while reducing loss to 1.22% through iterative debugging and parameter tuning.</li>
+        <li>Bot survived 37 hands against peer-designed bots in a live classroom tournament.</li>
+        <li>Evaluated system performance metrics and compiled a detailed engineering report highlighting analytics, performance trends, strengths and weaknesses.</li>
+        <li>Presented findings to engineering colleagues, enabling collaborative problem solving and driving operational improvements.</li>
+      </ul>
+    </div>
+
+    <div class="mb-12 border-l-4 border-blue-500 pl-6">
+      <h2 class="text-2xl font-semibold mb-1">Steam Achievement Fetcher</h2>
+      <p class="text-blue-400 font-medium mb-4">Full-Stack · Python (Flask) · Firebase · Steam API · HTML/CSS/JS</p>
+      <p class="text-muted mb-4">A full-stack web application that integrates with the Steam API to generate random achievement challenges for users with social and gamified features.</p>
+      <ul class="text-muted space-y-2 list-disc list-inside">
+        <li>Implemented Steam OpenID login, achievement fetching, and database logic with Firebase on the backend.</li>
+        <li>Built a responsive frontend with tracking dashboards and leaderboards to monitor user engagement, system uptime, and performance metrics.</li>
+        <li>System tracks streaks, manages friend connections, and ranks users competitively.</li>
+        <li>Contributed to end-to-end operational success ensuring system functionality, data integrity, and a secure user-friendly experience.</li>
+      </ul>
+    </div>
+
+    <div class="mb-12 border-l-4 border-blue-500 pl-6">
+      <h2 class="text-2xl font-semibold mb-1">MoodBot</h2>
+      <p class="text-blue-400 font-medium mb-4">Python · LSU WICS Hackathon 2026</p>
+      <p class="text-muted mb-4">Created at the LSU WICS Hackathon (March 20–22, 2026). An interactive Python bot that communicates motivational quotes and mini challenges based on the emotions the user presents.</p>
+    </div>
+
+    <div class="mb-12 border-l-4 border-yellow-500 pl-6">
+      <h2 class="text-2xl font-semibold mb-1">Handoff <span class="text-sm text-yellow-400 font-normal">(In Progress)</span></h2>
+      <p class="text-blue-400 font-medium mb-4">Mobile App</p>
+      <p class="text-muted">A college buying and selling resale app designed for students.</p>
+    </div>
+
+    <div class="mb-12 border-l-4 border-yellow-500 pl-6">
+      <h2 class="text-2xl font-semibold mb-1">PricePulser <span class="text-sm text-yellow-400 font-normal">(In Progress)</span></h2>
+      <p class="text-blue-400 font-medium mb-4">SQL · Database</p>
+      <p class="text-muted">A relational SQL database for grocery store items across the Baton Rouge Metropolitan area.</p>
+    </div>
+  </section>
+</Layout>
