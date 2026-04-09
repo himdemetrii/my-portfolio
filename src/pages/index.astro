@@ -1,12 +1,12 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import steamImage from '~/assets/images/steam-after1.png';
 
 const metadata = {
   title: 'Demetri Williams — CS Portfolio',
@@ -63,14 +63,19 @@ const metadata = {
     subtitle="A blend of AI/ML knowledge, full-stack development, and data analysis built through coursework, projects, and real-world experience!"
     items={[
       {
-        title: 'AI & Machine Learning',
-        description: 'Reinforcement learning, neural networks, model training & fine-tuning, LLMs, PyTorch, and working with real-world datasets.',
-        icon: 'tabler:brain',
+        title: 'Design & Collaboration',
+        description: 'Figma, hi-fi/lo-fi UI/UX design, Cursor AI, IBM Design Thinking, Scrum, cross-functional teamwork, and technical documentation.',
+        icon: 'tabler:layout',
       },
       {
         title: 'Full-Stack Development',
         description: 'Python (Flask), JavaScript, HTML/CSS, Firebase, REST APIs, and building end-to-end web applications.',
         icon: 'tabler:code',
+      },
+      {
+        title: 'AI & Machine Learning',
+        description: 'Reinforcement learning, neural networks, model training & fine-tuning, LLMs, PyTorch, and working with real-world datasets.',
+        icon: 'tabler:brain',
       },
       {
         title: 'Data & Analytics',
@@ -84,13 +89,8 @@ const metadata = {
       },
       {
         title: 'Programming Languages',
-        description: 'Python, Java, C, C++, C#, SQL, JavaScript, Bash — comfortable across multiple paradigms.',
+        description: 'Python, Java, C, C++, C#, SQL, JavaScript, Bash, and comfortable across multiple paradigms.',
         icon: 'tabler:terminal-2',
-      },
-      {
-        title: 'Design & Collaboration',
-        description: 'Figma, hi-fi/lo-fi UI/UX design, Scrum, cross-functional teamwork, and technical documentation.',
-        icon: 'tabler:layout',
       },
     ]}
   />
@@ -145,7 +145,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: '/steam-after1.png',
+      src: steamImage,
       alt: 'Steam Achievement Fetcher',
     }}
   >
@@ -153,7 +153,7 @@ const metadata = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Steam Achievement Fetcher</h3>
       A full-stack web app integrating with the Steam API to generate random achievement challenges with social and gamified features.
       <div class="mt-4">
-        <a href="/case-studies#steam" class="inline-flex items-center gap-2 text-accent hover:underline font-medium">
+        <a href="/case-studies" class="inline-flex items-center gap-2 text-accent hover:underline font-medium">
           View Case Study →
         </a>
       </div>

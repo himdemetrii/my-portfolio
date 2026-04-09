@@ -1,5 +1,5 @@
 site:
-  name: Demetri Williams - Computer Science
+  name: Demetri Williams 
   site: 'https://demetriwilliams.vercel.app'
   base: '/'
   trailingSlash: false
