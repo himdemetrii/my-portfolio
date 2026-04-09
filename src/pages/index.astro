@@ -7,6 +7,7 @@ import Content from '~/components/widgets/Content.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import steamImage from '~/assets/images/steam-after1.png';
+import steamImage2 from '~/assets/images/steam-after3.png';
 
 const metadata = {
   title: 'Demetri Williams — CS Portfolio',
@@ -180,7 +181,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=2070&q=80',
+      src: steamImage2,
       alt: 'Poker Bot Project',
     }}
   >
@@ -197,6 +198,31 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <!-- In Progress -->
+  <section class="px-6 py-12 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold mb-2 text-center">In Progress</h2>
+    <p class="text-muted text-center mb-10">What's currently being built.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="border-l-4 border-yellow-500 pl-6 py-2">
+        <div class="flex items-center gap-2 mb-1">
+          <h3 class="text-xl font-semibold">Handoff</h3>
+          <span class="text-xs text-yellow-400 border border-yellow-500/50 px-2 py-0.5 rounded-full">In Progress</span>
+        </div>
+        <p class="text-blue-400 text-sm font-medium mb-2">Mobile App · UX/UI · React Native</p>
+        <p class="text-muted text-sm mb-3">A student-exclusive campus resale marketplace with .edu verification, campus meetup locations, and a reliability rating system.</p>
+        <a href="/case-studies" class="text-accent hover:underline text-sm font-medium">View Case Study →</a>
+      </div>
+      <div class="border-l-4 border-yellow-500 pl-6 py-2">
+        <div class="flex items-center gap-2 mb-1">
+          <h3 class="text-xl font-semibold">PricePulser</h3>
+          <span class="text-xs text-yellow-400 border border-yellow-500/50 px-2 py-0.5 rounded-full">In Progress</span>
+        </div>
+        <p class="text-blue-400 text-sm font-medium mb-2">SQL · Relational Database · Python</p>
+        <p class="text-muted text-sm">A relational SQL database tracking grocery store item prices across the Baton Rouge Metropolitan area.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Stats -->
   <Stats

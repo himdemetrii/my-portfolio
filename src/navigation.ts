@@ -15,13 +15,16 @@ export const headerData = {
       href: '/projects',
     },
     {
-  text: 'Case Studies',
-  href: '/case-studies',
-},
+      text: 'Case Studies',
+      href: '/case-studies',
+    },
+    {
+      text: 'TikTok',
+      href: '/tiktok',
+    },
     {
       text: 'Contact',
-    href: '/contact',
-
+      href: '/contact',
     },
   ],
   actions: [
