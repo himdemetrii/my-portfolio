@@ -2,37 +2,8 @@
 import { SITE } from 'astrowind:config';
 ---
 
-<div class="relative inline-flex items-center justify-center px-4 py-1">
-  <svg class="absolute inset-0 w-full h-full overflow-visible" viewBox="0 0 200 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Base dark track -->
-    <rect x="1" y="1" width="202" height="42" rx="21" ry="21" stroke="#444" stroke-width="2"/>
-    <!-- Racing glow dot -->
-    <rect x="1" y="1" width="198" height="42" rx="21" ry="21"
-      stroke="#FFD700"
-      stroke-width="4"
-      stroke-dasharray="30 450"
-      stroke-linecap="round"
-      filter="url(#glow)"
-    >
-      <animate
-        attributeName="stroke-dashoffset"
-        from="0"
-        to="-480"
-        dur="2s"
-        repeatCount="indefinite"
-      />
-    </rect>
-    <defs>
-      <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-        <feMerge>
-          <feMergeNode in="coloredBlur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-    </defs>
-  </svg>
-  <span class="relative text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white z-10">
-    {SITE?.name}
-  </span>
-</div>
+<span
+  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+>
+  {SITE?.name}
+</span>

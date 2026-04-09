@@ -154,7 +154,23 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
           actions?.length ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
               {actions.map((btnProps) => (
-                <Button {...btnProps} class="ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto" />
+                <div class="relative inline-block ml-2">
+                  <svg class="absolute inset-0 w-full h-full overflow-visible pointer-events-none" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="98" height="38" rx="19" ry="19" stroke="#FFD700" stroke-width="3" stroke-dasharray="25 280" stroke-linecap="round" filter="url(#resumeGlow)">
+                      <animate attributeName="stroke-dashoffset" from="0" to="-305" dur="2s" repeatCount="indefinite"/>
+                    </rect>
+                    <defs>
+                      <filter id="resumeGlow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
+                    </defs>
+                  </svg>
+                  <Button {...btnProps} class="py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto" />
+                </div>
               ))}
             </span>
           ) : (
