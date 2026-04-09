@@ -48,6 +48,7 @@ const metadata = {
           playsinline
           controls
           preload="auto"
+          poster="/coverphoto.jpeg"
           class="rounded-xl shadow-lg max-w-sm w-full"
         />
       </div>
@@ -131,6 +132,41 @@ const metadata = {
     title="What I've Built - So Far ;)"
     items={[
       {
+        title: 'Full-Stack Application',
+        description: 'Python (Flask) backend with Steam OpenID login, achievement fetching, and Firebase database logic.',
+      },
+      {
+        title: 'Gamified Features',
+        description: 'Tracks streaks, manages friend connections, and ranks users competitively through leaderboards and dashboards.',
+      },
+      {
+        title: 'Responsive Frontend',
+        description: 'Built with HTML, CSS, and JavaScript — monitoring user engagement, system uptime, and performance metrics.',
+      },
+    ]}
+    image={{
+      src: '/steam-after1.png',
+      alt: 'Steam Achievement Fetcher',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Steam Achievement Fetcher</h3>
+      A full-stack web app integrating with the Steam API to generate random achievement challenges with social and gamified features.
+      <div class="mt-4">
+        <a href="/case-studies#steam" class="inline-flex items-center gap-2 text-accent hover:underline font-medium">
+          View Case Study →
+        </a>
+      </div>
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    items={[
+      {
         title: 'Reinforcement Learning',
         description: 'Built using PyTorch and Google DeepMind\'s Open Spiel framework, optimizing strategy in limited-information environments.',
       },
@@ -151,36 +187,11 @@ const metadata = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Texas Hold 'Em Poker Bot</h3>
       A reinforcement learning AI bot trained to play poker using PyTorch and DeepMind's Open Spiel framework.
-    </Fragment>
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'Full-Stack Application',
-        description: 'Python (Flask) backend with Steam OpenID login, achievement fetching, and Firebase database logic.',
-      },
-      {
-        title: 'Gamified Features',
-        description: 'Tracks streaks, manages friend connections, and ranks users competitively through leaderboards and dashboards.',
-      },
-      {
-        title: 'Responsive Frontend',
-        description: 'Built with HTML, CSS, and JavaScript — monitoring user engagement, system uptime, and performance metrics.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Steam Achievement Fetcher',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Steam Achievement Fetcher</h3>
-      A full-stack web app integrating with the Steam API to generate random achievement challenges with social and gamified features.
+      <div class="mt-4">
+        <a href="/case-studies" class="inline-flex items-center gap-2 text-accent hover:underline font-medium">
+          View Case Study →
+        </a>
+      </div>
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
