@@ -15,6 +15,10 @@ export const headerData = {
       href: '/projects',
     },
     {
+  text: 'Case Studies',
+  href: '/case-studies',
+},
+    {
       text: 'Contact',
     href: '/contact',
 
