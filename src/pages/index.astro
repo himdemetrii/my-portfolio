@@ -1,4 +1,3 @@
-demetriwilliams@Demetris-MacBook-Air my-portfolio % cat src/pages/index.astro
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
@@ -8,6 +7,7 @@ import Content from '~/components/widgets/Content.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import steamImage from '~/assets/images/steam-after3.png';
+import handoffWinImage from '~/assets/images/handoff-win.jpg';
 
 const metadata = {
   title: 'Demetri Williams — CS Portfolio',
@@ -115,7 +115,7 @@ const metadata = {
       {
         title: 'B.S. Computer Science Engineering — <span class="font-medium">LSU</span> <span class="text-sm text-gray-500">(Expected December 2026)</span>',
         description:
-          "Concentration in Software Engineering. GPA: 3.25. Dean's List 2025. Coursework includes AI, Database Systems, Cloud Computing, Programming Languages, Operating Systems, and Advanced Data Structures.",
+          "Concentration in Software Engineering. GPA: 3.58. Dean's List 2025. Coursework includes AI, Database Systems, Cloud Computing, Programming Languages, Operating Systems, and Advanced Data Structures.",
         icon: 'tabler:school',
       },
     ]}
@@ -188,7 +188,46 @@ const metadata = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Texas Hold 'Em Poker Bot</h3>
       A reinforcement learning AI bot trained to play poker using PyTorch and DeepMind's Open Spiel framework.
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 
+  <!-- Handoff -->
+  <Content
+    isAfterContent
+    isReversed
+    items={[
+      {
+        title: '🏆 Tiger Tank Winner — $3,000',
+        description: 'Took 1st place at LSU\'s Shark Tank-style pitch competition, beating out all competing teams and walking away with a $3,000 prize from EFCU Financial.',
+      },
+      {
+        title: '.edu Verified Marketplace',
+        description: 'Student-exclusive platform with built-in .edu email verification, campus meetup locations, and a reliability rating system to keep transactions safe.',
+      },
+      {
+        title: 'AI-Assisted Quick List',
+        description: 'Create a listing from a single photo in under 60 seconds using AI-assisted listing generation.',
+      },
+    ]}
+    image={{
+      src: handoffWinImage,
+      alt: 'Demetri Williams holding Tiger Tank $3,000 winner\'s check for Handoff',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Handoff
+        <span class="ml-2 text-xs text-yellow-400 border border-yellow-500/50 px-2 py-0.5 rounded-full align-middle">In Progress</span>
+      </h3>
+      A student-exclusive campus resale marketplace built with .edu verification, campus meetup spots, and a trust-first design — because college students deserve a platform that actually has their back.
+      <div class="mt-4">
+        <a href="/case-studies" class="inline-flex items-center gap-2 text-accent hover:underline font-medium">
+          View Case Study →
+        </a>
+      </div>
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -200,15 +239,6 @@ const metadata = {
     <h2 class="text-3xl font-bold mb-2 text-center">In Progress</h2>
     <p class="text-muted text-center mb-10">What's currently being built.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="border-l-4 border-yellow-500 pl-6 py-2">
-        <div class="flex items-center gap-2 mb-1">
-          <h3 class="text-xl font-semibold">Handoff</h3>
-          <span class="text-xs text-yellow-400 border border-yellow-500/50 px-2 py-0.5 rounded-full">In Progress</span>
-        </div>
-        <p class="text-blue-400 text-sm font-medium mb-2">Mobile App · UX/UI · Figma · Teamwork  </p>
-        <p class="text-muted text-sm mb-3">A student-exclusive campus resale marketplace with .edu verification, campus meetup locations, and a reliability rating system.</p>
-        <a href="/case-studies" class="text-accent hover:underline text-sm font-medium">View Case Study →</a>
-      </div>
       <div class="border-l-4 border-yellow-500 pl-6 py-2">
         <div class="flex items-center gap-2 mb-1">
           <h3 class="text-xl font-semibold">PricePulser</h3>
@@ -223,10 +253,10 @@ const metadata = {
   <!-- Stats -->
   <Stats
     stats={[
-      { title: 'TikTok Followers', amount: '36K+' },
-      { title: 'GPA', amount: '3.25' },
+      { title: 'TikTok Followers', amount: '34K+' },
+      { title: 'GPA', amount: '3.58' },
       { title: "Dean's List", amount: '2025' },
-      { title: 'Projects Built', amount: '4+' },
+      { title: 'Projects Built', amount: '5+' },
     ]}
   />
 
@@ -250,4 +280,4 @@ const metadata = {
     </Fragment>
   </CallToAction>
 
-</Layout>%                                                                 
+</Layout>
