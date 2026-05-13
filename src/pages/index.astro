@@ -131,6 +131,45 @@ const metadata = {
     isReversed
     tagline="Projects"
     title="What I've Built - SO FAR"
+    <!-- Handoff -->
+  <Content
+    isAfterContent
+    isReversed
+    items={[
+      {
+        title: '🏆 Tiger Tank Winner — $3,000',
+        description: 'Took 1st place at LSU\'s Shark Tank-style pitch competition, beating out all competing teams and walking away with a $3,000 prize from EFCU Financial.',
+      },
+      {
+        title: '.edu Verified Marketplace',
+        description: 'Student-exclusive platform with built-in .edu email verification, campus meetup locations, and a reliability rating system to keep transactions safe.',
+      },
+      {
+        title: 'AI-Assisted Quick List',
+        description: 'Create a listing from a single photo in under 60 seconds using AI-assisted listing generation.',
+      },
+    ]}
+    image={{
+      src: handoffWinImage,
+      alt: 'Demetri Williams holding Tiger Tank $3,000 winner\'s check for Handoff',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Handoff
+        <span class="ml-2 text-xs text-yellow-400 border border-yellow-500/50 px-2 py-0.5 rounded-full align-middle">In Progress</span>
+      </h3>
+      A student-exclusive campus resale marketplace built with .edu verification, campus meetup spots, and a trust-first design — because college students deserve a platform that actually has their back.
+      <div class="mt-4">
+        <a href="/case-studies" class="inline-flex items-center gap-2 text-accent hover:underline font-medium">
+          View Case Study →
+        </a>
+      </div>
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
     items={[
       {
         title: 'Full-Stack Application',
@@ -193,47 +232,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Handoff -->
-  <Content
-    isAfterContent
-    isReversed
-    items={[
-      {
-        title: '🏆 Tiger Tank Winner — $3,000',
-        description: 'Took 1st place at LSU\'s Shark Tank-style pitch competition, beating out all competing teams and walking away with a $3,000 prize from EFCU Financial.',
-      },
-      {
-        title: '.edu Verified Marketplace',
-        description: 'Student-exclusive platform with built-in .edu email verification, campus meetup locations, and a reliability rating system to keep transactions safe.',
-      },
-      {
-        title: 'AI-Assisted Quick List',
-        description: 'Create a listing from a single photo in under 60 seconds using AI-assisted listing generation.',
-      },
-    ]}
-    image={{
-      src: handoffWinImage,
-      alt: 'Demetri Williams holding Tiger Tank $3,000 winner\'s check for Handoff',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Handoff
-        <span class="ml-2 text-xs text-yellow-400 border border-yellow-500/50 px-2 py-0.5 rounded-full align-middle">In Progress</span>
-      </h3>
-      A student-exclusive campus resale marketplace built with .edu verification, campus meetup spots, and a trust-first design — because college students deserve a platform that actually has their back.
-      <div class="mt-4">
-        <a href="/case-studies" class="inline-flex items-center gap-2 text-accent hover:underline font-medium">
-          View Case Study →
-        </a>
-      </div>
-    </Fragment>
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
   <!-- In Progress -->
   <section class="px-6 py-12 max-w-7xl mx-auto">
     <h2 class="text-3xl font-bold mb-2 text-center">In Progress</h2>
@@ -253,8 +251,8 @@ const metadata = {
   <!-- Stats -->
   <Stats
     stats={[
-      { title: 'TikTok Followers', amount: '34K+' },
-      { title: 'GPA', amount: '3.58' },
+      { title: 'TikTok Followers', amount: '36K+' },
+      { title: 'GPA', amount: '3.309' },
       { title: "Dean's List", amount: '2025' },
       { title: 'Projects Built', amount: '5+' },
     ]}
